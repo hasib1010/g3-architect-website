@@ -112,7 +112,7 @@ nav>h3 {
 
 .feature-title {
     color: #727272;
-    font-size: 45px;
+    font-size: 2.8rem;
     font-weight: 500;
     width: 468px;
 
@@ -183,7 +183,7 @@ nav>h3 {
     line-height: 26px;
 }
 
-.ten-years-badge { 
+.ten-years-badge {
     width: 342px;
     height: 200px;
     border-radius: 8px;
@@ -205,8 +205,8 @@ nav>h3 {
 
 .badge-description {
     text-align: center;
-    color: #FFF; 
-    font-size: 1.8rem; 
+    color: #FFF;
+    font-size: 1.8rem;
     font-weight: 500;
     line-height: 40px;
 }
@@ -312,14 +312,31 @@ footer {
 
     .header-title {
         text-align: center;
-        width: 300px;
+        width: 100%
     }
 
-    .feature-title,
+    .featured {
+        flex-direction: column;
+    }
+
+    .featured-image>img {
+        width: 100%;
+
+    }
+
+    .ten-years-badge {
+        top: 20px;
+        left: 10px;
+    }
+
     .feature-descripption,
     .card {
         padding: 10px;
         margin: 20px;
+    }
+
+    .feature-title {
+        width: 100%;
     }
 
     .sponsors-gallery {
@@ -360,6 +377,15 @@ footer {
 
 /* medium Devices */
 @media screen and (min-width: 576px) and (max-width: 980px) {
+    .featured {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .ten-years-badge {
+        top: 20px;
+        left: 10px;
+    }
 
     .facts-card-container,
     .sponsors-gallery {
