@@ -5,8 +5,8 @@
 
 main,
 footer {
-    margin-left: 240px;
-    margin-right: 240px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 /* header style */
@@ -88,7 +88,7 @@ nav>h3 {
     margin-top: 30px;
 }
 
-.banner { 
+.banner {
     margin-top: 30px;
     max-width: 1100px;
     width: 100%;
@@ -98,24 +98,130 @@ nav>h3 {
 
 
 @media screen and (max-width: 576px) {
-    
-    header{
-         padding: 5px;
+
+    header {
+        padding: 5px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
     }
 
-    .header-title>h2 {   
+    nav>ul {
+        padding-top: 30px;
+    }
+
+    .header-title>h2 {
         width: 100%;
         margin-top: 20px;
     }
 
     .header-description>p {
-        width: 100%}
+        width: 100%
+    }
 
-        .banner{
-            width: 100%;
-        }
+
+    .banner {
+        width: 100%;
+    }
+
+
+}
+
+/* medium Devices */
+@media screen and (min-width: 576px) and (max-width: 980px) {
+    header {
+        padding: 5px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav>ul {
+        padding-top: 30px;
+    }
+
+    .header-title>h2 {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .header-description>p {
+        width: 100%
+    }
+
+
+    .banner {
+        width: 100%;
+    }
+
+}
+
+/* feature section */
+
+.feature {
+    display: flex;
+    gap: 75px;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 85px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.feature-title {
+    color: #727272;
+    font-size: 45px;
+    font-weight: 500;
+    width: 468px;
+
+}
+
+.black {
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.orange {
+    color: #FF900E;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.feature-descripption {
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+/* responsive */
+@media screen and (max-width: 576px) {
+
+    .feature {
+        flex-direction: column;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 980px) {
+    .feature {
+        flex-direction: column;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
 
 }
