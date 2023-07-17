@@ -138,6 +138,79 @@ nav>h3 {
     line-height: 26px;
 }
 
+/* featured section */
+.featured {
+    display: flex;
+    gap: 140px;
+    margin-top: 150px;
+}
+
+.featured-title {
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+    border-left: 8px solid #FF900E;
+    padding-left: 20px;
+}
+
+.featured-descripption {
+    padding-left: 30px;
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 25px;
+}
+
+.featured-card {
+    padding: 30px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-top: 20px;
+}
+
+.featured-card>h5 {
+    color: #131313;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.featured-card>p {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.ten-years-badge { 
+    width: 342px;
+    height: 200px;
+    border-radius: 8px;
+    background: #FF900E;
+    margin: 0;
+    position: relative;
+    top: -110px;
+    left: -90px;
+}
+
+.badge-title {
+    padding-top: 45px;
+    color: #FFF;
+    text-align: center;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.badge-description {
+    text-align: center;
+    color: #FFF; 
+    font-size: 1.8rem; 
+    font-weight: 500;
+    line-height: 40px;
+}
+
 /* facts section */
 
 
